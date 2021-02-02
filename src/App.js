@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 function App() {
   const persons = [
     {
@@ -9,13 +11,18 @@ function App() {
       name: "Alice",
       gender: "male",
       age: "20"
+    },
+    {
+      name: "Thanakorn Chaininphun 620610790",
+      gender: "male",
+      age: "20"
     }
   ];
   return (
     <div class="ml-2">
       <h3 class="title is-3">Person List</h3>
 
-      {/* Convert me to a component! */}
+      {}
       <table class="table is-bordered mb-3">
         <tbody>
           <tr>
@@ -31,10 +38,14 @@ function App() {
         </tbody>
       </table>
 
-      {/* Code me please! */}
+      {function state()
+        {
+          const [count, setCount = useState(0)]
+        }
+      }
       <h3 class="title is-3">ID Counter</h3>
-      <p>YOUR ID HERE</p>
-      <button>-</button>
+      <p>620610790</p>
+      <button onClick = {() => this.setState({count: this.state.count - 1}}}>-</button>
       <button>reset</button>
       <button>+</button>
     </div>
